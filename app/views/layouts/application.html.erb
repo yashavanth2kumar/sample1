@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+    h1
+    {
+   	color: #29691d;
+    font-weight: 500;
+     text-shadow: 1px 1px 2px #35442d;
+    }
+
+    .btn {
+  background: #22e38c;
+  background-image: -webkit-linear-gradient(top, #22e38c, #22e38c);
+  background-image: -moz-linear-gradient(top, #22e38c, #22e38c);
+  background-image: -ms-linear-gradient(top, #22e38c, #22e38c);
+  background-image: -o-linear-gradient(top, #22e38c, #22e38c);
+  background-image: linear-gradient(to bottom, #22e38c, #22e38c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  padding: 5px 15px 5px 15px;
+  color: #ffffff;
+  font-size: 16px;
+      border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.btn a{
+	text-decoration: none;
+	color: #fff;	
+}
+.btn a:hover,a:visited{
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+}
+.name
+{
+	font-size: 20px;color: #29691d;
+    font-family: cursive;
+}
+  .input-content
+  {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(0, 0, 0);
+    background: #ffffff;
+    padding: 4em;
+    border-top: solid 10px #29691d;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  }
+  .wrapper
+  {
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+    </style>
+  </head>
+
+  <body style="background: #76b852;position: relative;">
+    <%= yield %>
+  </body>
+</html>
